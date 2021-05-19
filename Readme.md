@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Даниил Кметь](https://up.htmlacademy.ru/htmlcss/31/user/237031).
-* Наставник: `Неизвестно`.
+- Студент: [Даниил Кметь](https://up.htmlacademy.ru/htmlcss/31/user/237031).
+- Наставник: [Дмитрий Гуляев] (https://htmlacademy.ru/profile/dima).
 
 ---
 
