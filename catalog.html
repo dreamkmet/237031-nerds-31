@@ -37,26 +37,117 @@
    <form method="get" action="echo.htmlacademy.ru">
      <fieldset>
        <legend>СТОИМОСТЬ:</legend>
-       <ul>
-         <li>от 0</li>
-         <li>до 15000</li>
-       </ul>
+         <p>
+           <input type="range" name="price" id="price">
+           <label for="price">от 0 до 15000</label> 
+          </p>
      </fieldset>
     <fieldset>
+      
       <legend>СЕТКА:</legend>
+      <ul>
+        <li>
+          <input type="radio" name="adaptive" id="filter-adaptive" checked>
+          <label for="filter-adaptive">Адаптивная</label>
+        </li>
+        <li>
+          <input type="radio" name="fixed" id="filter-fixed">
+          <label for="filter-fixed">Фиксированная</label>
+        </li>
+        <li>
+          <input type="radio" name="rubber" id="filter-rubbers">
+          <label for="filter-rubbers">Резиновая</label>
+        </li>
+      </ul>
     </fieldset>
     <fieldset>
       <legend>ОСОБЕННОСТИ:</legend>
-    </fieldset>
-    <fieldset>
-      <legend>СОРТИРОВАТЬ:</legend>
-    </fieldset>
-    <fieldset>
-      <legend>ПО ЦЕНЕ:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="slider" id="filter-sliders" checked>
+          <label for="filter-sliders">Слайдер</label>
+        </li>
+        <li>
+          <input type="checkbox" name="advantages" id="filter-avantages">
+          <label for="filter-advanteges">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" id="filter-news" checked>
+          <label for="filter-news">Новости</label>
+        </li>
+        <li>
+          <input type="checkbox" name="gallery" id="filter-galleries">
+          <label for="filter-galleries">Галерея</label>
+        </li>
+        <li>
+          <input type="checkbox" name="basket" id="filter-baskets">
+          <label for="filter-baskets">Корзина</label>
+        </li>
+      </ul>
     </fieldset>
     <button type="submit">ПОКАЗАТЬ</button>
    </form>
 
+  <section>
+    <h3>Сортировать:</h3>
+    <form action="https://echo.htmlacademy.ru" method="post">
+  
+    </form>
+  </section>
+      <ul>
+        <li>
+          <input type="radio" name="price" id="filter-price" checked>
+          <label for="filter-price">ПО ЦЕНЕ</label>
+        </li>
+        <li>
+          <input type="radio" name="tip" id="filter-tipe">
+          <label for="filter-tipe">ПО ТИПУ</label>
+        </li>
+        <li>
+          <input type="radio" name="name" id="filter-name">
+          <label for="filter-name">ПО НАЗВАНИЮ</label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">
+            <img src="img/img-sedona.jpg" width="358" height="578" alt="Макет Sedona"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/img-pink.jpg" width="358" height="578" alt="Макет PINK"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/img-barebershop.jpg" width="358" height="578" alt="Макет Barbershop BORODINSKI"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/img-mishka.jpg" width="359" height="578" alt="Макет MISHKA"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/img-aplus.jpg" width="359" height="578" alt="Макет A+"></a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/img-kvast.jpg" width="359" height="578" alt="Макет КВАСТ"></a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">1</a>
+        </li>
+        <li>
+          <a href="#">2</a>
+        </li>
+        <li>
+          <a href="#">3</a>
+        </li>
+        <li>
+          <a href="#">СЛЕДУЮЩАЯ</a>
+        </li>
+      </ul>
   <section>
     <h2>Контакты</h2>
     <h3>NЁRDS DESIGN STUDIO</h3>
@@ -84,6 +175,7 @@
     </a>
   
   </section>
+  
   </main>
 
   <footer>
