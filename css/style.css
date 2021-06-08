@@ -1,8 +1,26 @@
 :root {
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-dark-grey: #4d4d4d;
+  --basic-extra-grey: #a6a6a6;
+  --basic-light-grey: #d5d5d5;
+  --basic-extra-light-grey: #dfdfdf;
+  --basic-white: #ffffff;
+  --basic-grey: #eeeeee;
+  --basic-extra-red: #fb565a;
+  --basic-light-red: #e74246;
+  --basic-red: #d7373b;
+  --basic-green: #01a25e;
+  --basic-light-green: #00ca74;
+  --basic-extra-green: #00bc6c;
+  --basic-dark-green: #00aa62;
+  --basic-light-yellow: #efc849;
+  --basic-yellow: #eab534;
+  --basic-dark-yellow: #e5a722;
 }
 
 body {
-  width: 1140px;
+  min-width: 1140px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
