@@ -20,7 +20,7 @@
 }
 
 body {
-  min-width: 1140px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -28,5 +28,142 @@ body {
   line-height: 24px;
   font-weight: 400px;
   color: var(--basic-black);
+  text-transform: none;
   background-color: var(--basic-white);
+}
+
+.site-navigation a {
+  text-decoration: none;
+}
+
+.user-cart-image {
+  text-decoration: none; /* Убирает нижнее подчеркивание текста */
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none; /*Убирает маркеры списка */
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-extra-red);
+}
+
+/*User Navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-cart a:hover,
+.user-cart a:focus {
+  background-color: var(--basic-extra-red);
+}
+
+.slides-list {
+  list-style: none;
+}
+
+.slides-list h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about-us {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.orders-list {
+  list-style: none;
+}
+
+.features-list {
+  list-style: none;
+}
+.excellence {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.clients-list {
+  list-style: none;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.grid-list {
+  list-style: none;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.layouts-list {
+  list-style: none;
+}
+
+.page-with-layouts-list {
+  list-style: none;
+}
+
+.page-with-layouts-list a {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: var(--basic-grey);
+}
+
+.contacts-form-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.btn {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-extra-red);
+  border: none;
 }

@@ -59,7 +59,7 @@
     <fieldset>
 
       <legend>СЕТКА:</legend>
-      <ul class="grid">
+      <ul class="grid-list">
         <li class="grid-item">
           <input type="radio" name="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
@@ -76,7 +76,7 @@
     </fieldset>
     <fieldset>
       <legend>ОСОБЕННОСТИ:</legend>
-      <ul class="features">
+      <ul class="features-list">
         <li class="features-item">
           <input type="checkbox" name="slider" id="filter-sliders" checked>
           <label for="filter-sliders">Слайдер</label>
@@ -99,7 +99,7 @@
         </li>
       </ul>
     </fieldset>
-    <button type="submit">ПОКАЗАТЬ</button>
+    <button class="btn buy-btn" type="submit">ПОКАЗАТЬ</button>
    </form>
 
   <section>
@@ -108,7 +108,7 @@
 
     </form>
   </section>
-      <ul class="sort">
+      <ul class="sort-list">
         <li class="sort-item">
           <input type="radio" name="price" id="filter-price" checked>
           <label for="filter-price">ПО ЦЕНЕ</label>
@@ -122,7 +122,7 @@
           <label for="filter-name">ПО НАЗВАНИЮ</label>
         </li>
       </ul>
-      <ul class="layouts">
+      <ul class="layouts-list">
         <li class="layouts-item">
           <a href="#">
             <img src="img/templates/sedona-template.jpg" width="358" height="578" alt="Макет Sedona"></a>
@@ -148,7 +148,7 @@
             <img src="img/templates/kvast-template.jpg" width="359" height="578" alt="Макет КВАСТ"></a>
         </li>
       </ul>
-      <ul class="page-with-layouts">
+      <ul class="page-with-layouts-list">
         <li class="page-with-layouts-item">
           <a href="#">1</a>
         </li>
@@ -180,8 +180,7 @@
           <label for="appointment-letter">Текст письма:</label>
           <input id="appointment-letter" type="text" name="letter" placeholder="В свободной форме">
         </p>
-          <button class="send-form" type="submit">ОТПРАВИТЬ</button>
-          <button class="close-form" type="button">Закрыть</button>
+          <button class="btn send-btn" type="submit">ОТПРАВИТЬ</button>
         </form>
         <a class="map" href="blank.html">
           <img src="img/map.jpg" width="1440" height="416" alt="Карта">
@@ -196,18 +195,18 @@
 
   <footer class="main-footer">
     <section class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li>
-          <a class="social-button" href="#">
-            <img src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK">Вконтакте</a>
+          <a class="btn social-btn" href="#">
+            <img src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="img/socials/facebook-icon.svg" width="12" height="22" alt="Мы в Facebook">Фейсбук</a>
+          <a class="btn social-btn" href="#">
+            <img src="img/socials/facebook-icon.svg" width="12" height="22" alt="Мы в Facebook"></a>
         </li>
         <li>
-          <a class="social-button" href="#">
-            <img src="img/socials/instagram-icon.svg" width="15" height="9" alt="Мы в Instagram">Инстаграм</a>
+          <a class="btn social-btn" href="#">
+            <img src="img/socials/instagram-icon.svg" width="15" height="9" alt="Мы в Instagram"></a>
         </li>
       </ul>
     </section>
@@ -218,6 +217,7 @@
     <section class="footer-contacts">
       <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
       <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      <button class="btn write-to-us-btn" type="submit">НАПИШИТЕ НАМ</button>
     </section>
 
 </body>
