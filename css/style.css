@@ -1,9 +1,12 @@
 :root {
   --basic-black: #000000;
+  --basic-dark: #444444;
   --basic-extra-dark: #283136;
   --basic-dark-grey: #4d4d4d;
   --basic-extra-grey: #a6a6a6;
   --basic-light-grey: #d5d5d5;
+  --basic-silver: #d7dcde;
+  --basic-extra-silver: #dbdbdb;
   --basic-extra-light-grey: #dfdfdf;
   --basic-white: #ffffff;
   --basic-grey: #eeeeee;
@@ -133,10 +136,6 @@ body {
   list-style: none;
 }
 
-.sort-list {
-  list-style: none;
-}
-
 .layouts-list {
   list-style: none;
 }
@@ -149,14 +148,10 @@ body {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
-  background-color: var(--basic-grey);
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-extra-silver);
 }
 
-.contacts-form-item {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: bold;
-}
 .btn {
   font-size: 16px;
   line-height: 18px;
@@ -166,4 +161,74 @@ body {
   text-transform: uppercase;
   background-color: var(--basic-extra-red);
   border: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--basic-light-red);
+}
+
+/* Contacts */
+.contacts-phone {
+  color: inherit; /*Цвет наследуется от родителя */
+  text-decoration: none;
+}
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/*Contacts-form */
+.contacts-form-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.contacts-form-input {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent; /*Прозрачный цвет фона */
+  border: 2px solid var(--basic-silver);
+}
+
+.contacts-form-input:focus {
+  border-color: var(--basic-black);
+}
+
+/* Main footer */
+
+.main-footer {
+  background-color: var(--basic-white);
+}
+
+.social-btn {
+  color: inherit;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: var(--basic-light-red);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.footer-socal-quote {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
 }
