@@ -1,8 +1,29 @@
 :root {
+  --basic-black: #000000;
+  --basic-dark: #444444;
+  --basic-extra-dark: #283136;
+  --basic-dark-grey: #4d4d4d;
+  --basic-extra-grey: #a6a6a6;
+  --basic-light-grey: #d5d5d5;
+  --basic-silver: #d7dcde;
+  --basic-extra-silver: #dbdbdb;
+  --basic-extra-light-grey: #dfdfdf;
+  --basic-white: #ffffff;
+  --basic-grey: #eeeeee;
+  --basic-extra-red: #fb565a;
+  --basic-light-red: #e74246;
+  --basic-red: #d7373b;
+  --basic-green: #01a25e;
+  --basic-light-green: #00ca74;
+  --basic-extra-green: #00bc6c;
+  --basic-dark-green: #00aa62;
+  --basic-light-yellow: #efc849;
+  --basic-yellow: #eab534;
+  --basic-dark-yellow: #e5a722;
 }
 
 body {
-  width: 1140px;
+  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -10,5 +31,203 @@ body {
   line-height: 24px;
   font-weight: 400px;
   color: var(--basic-black);
+  text-transform: none;
   background-color: var(--basic-white);
+}
+
+.site-navigation a {
+  text-decoration: none;
+}
+
+.user-cart-image {
+  text-decoration: none; /* Убирает нижнее подчеркивание текста */
+}
+
+.page-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none; /*Убирает маркеры списка */
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-extra-red);
+}
+
+/*User Navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-cart a:hover,
+.user-cart a:focus {
+  background-color: var(--basic-extra-red);
+}
+
+.slides-list {
+  list-style: none;
+}
+
+.slides-list h2 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.about-us {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.orders-list {
+  list-style: none;
+}
+
+.features-list {
+  list-style: none;
+}
+.excellence {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.clients-list {
+  list-style: none;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.grid-list {
+  list-style: none;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.layouts-list {
+  list-style: none;
+}
+
+.page-with-layouts-list {
+  list-style: none;
+}
+
+.page-with-layouts-list a {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: var(--basic-white);
+  border: 3px solid var(--basic-extra-silver);
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-extra-red);
+  border: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: var(--basic-light-red);
+}
+
+/* Contacts */
+.contacts-phone {
+  color: inherit; /*Цвет наследуется от родителя */
+  text-decoration: none;
+}
+
+.contacts h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+/*Contacts-form */
+.contacts-form-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.contacts-form-input {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent; /*Прозрачный цвет фона */
+  border: 2px solid var(--basic-silver);
+}
+
+.contacts-form-input:focus {
+  border-color: var(--basic-black);
+}
+
+/* Main footer */
+
+.main-footer {
+  background-color: var(--basic-white);
+}
+
+.social-btn {
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: var(--basic-light-red);
+}
+
+.sort-list {
+  list-style: none;
+}
+
+.footer-social {
+  text-align: left;
+}
+
+.footer-socal-quote {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
 }
