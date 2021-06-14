@@ -178,21 +178,39 @@
 .page-with-layouts-list {
   list-style: none;
 }
-.page-with-layouts-item {
+
+.page-btn {
   border: 3px solid var(--basic-extra-silver);
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: var(--basic-grey);
+  color: var(--basic-black);
+  font-weight: bold;
   width: 50px;
   height: 50px;
-  text-align: center;
+}
+
+.page-btn:hover,
+.page-btn:focus,
+.page-btn:active {
   background-color: var(--basic-white);
 }
-.page-with-layouts-number {
-  font-size: 10px;
-  line-height: 18px;
+.page-btn-next {
+  border: 3px solid var(--basic-extra-silver);
+  box-sizing: border-box;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: var(--basic-grey);
+  color: var(--basic-black);
   font-weight: bold;
-  text-decoration: none;
-  margin: 20px 17px;
+  width: 260px;
+  height: 50px;
 }
-.page-with-layouts-number-next {
+
+.page-btn-next:hover,
+.page-btn-next:focus,
+.page-btn-next:active {
+  background-color: var(--basic-white);
 }
 
 .btn {
