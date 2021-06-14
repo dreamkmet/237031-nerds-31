@@ -22,8 +22,10 @@
   --basic-yellow: #eab534;
   --basic-dark-yellow: #e5a722;
 }
-
-body {
+.page {
+  height: 100%;
+}
+.page-body {
   min-width: 1160px;
   margin: 0;
   padding: 0;
@@ -34,6 +36,11 @@ body {
   color: var(--basic-black);
   text-transform: none;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 .site-navigation a {
@@ -49,17 +56,47 @@ body {
   height: auto;
 }
 
+.main-header {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Main navigation */
+
 .main-navigation {
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
 }
 
+/*Container */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Logo */
+
+.main-header-logo {
+  justify-self: left;
+}
+
 .main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
   background-color: var(--basic-white);
+  width: 483px;
+  margin: 40px auto;
+  padding: 0 10px;
 }
 
 .site-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none; /*Убирает маркеры списка */
 }
 
@@ -136,17 +173,26 @@ body {
 .layouts-list {
   list-style: none;
 }
+/*page with layouts list */
 
 .page-with-layouts-list {
   list-style: none;
 }
-
-.page-with-layouts-list a {
-  font-size: 16px;
-  line-height: 18px;
-  text-decoration: none;
-  background-color: var(--basic-white);
+.page-with-layouts-item {
   border: 3px solid var(--basic-extra-silver);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  background-color: var(--basic-white);
+}
+.page-with-layouts-number {
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px 17px;
+}
+.page-with-layouts-number-next {
 }
 
 .btn {
