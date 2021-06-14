@@ -3,6 +3,7 @@
   --basic-dark: #444444;
   --basic-extra-dark: #283136;
   --basic-dark-grey: #4d4d4d;
+  --basic-silver-grey: #e1e1e1;
   --basic-extra-grey: #a6a6a6;
   --basic-light-grey: #d5d5d5;
   --basic-silver: #d7dcde;
@@ -124,10 +125,6 @@ body {
   list-style: none;
 }
 
-.social-list {
-  list-style: none;
-}
-
 .grid-list {
   list-style: none;
 }
@@ -205,12 +202,41 @@ body {
   background-color: var(--basic-white);
 }
 
-.social-btn {
+/* Social List */
+
+.social-list {
+  list-style: none;
 }
 
-.social-btn:hover,
-.social-btn:focus {
+.social-list-item {
+  background-color: var(--basic-silver-grey);
+  border: 1px solid var(--basic-white);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  text-align: center;
+}
+.social-list-item:hover,
+.social-list-item:focus {
   background-color: var(--basic-light-red);
+}
+
+.social-list-logo-vk {
+  width: 26px;
+  height: 15px;
+  margin: 33px 27px;
+}
+
+.social-list-logo-fb {
+  width: 12px;
+  height: 22px;
+  margin: 29px 30px;
+}
+
+.social-list-logo-inst {
+  width: 21px;
+  height: 21px;
+  margin: 30px 30px;
 }
 
 .sort-list {
