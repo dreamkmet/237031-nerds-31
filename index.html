@@ -45,7 +45,7 @@
 
 
       <h1>Нёрдс</h1>
-       <section class="slides">
+       <section class="container">
         <ul class="slides-list">
           <li class="slide one">
             <h2>Долго, дорого, скрупулезно.</h2>
@@ -105,12 +105,13 @@
         </ul>
       </section>
 
+      <div class="index-columns">
       <section class="about-company">
         <h2>О компании</h2>
         <p class="about-us">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как
         роботы.</p>
-      </section>
+
 
        <h3>Выполняем заказы на разработку:</h3>
          <ul class="orders-list">
@@ -124,6 +125,8 @@
               <p>Слайдшоу и видео для корпоративных презентаций</p>
             </li>
         </ul>
+       </section>
+       <section class="orders-statistic">
        <h2>с 2004 года Любим точность во всем:</h2>
        <a class="nerds-logo">
          <img src="img/nerds-illustration.jpg" width="360" height="208" alt="nerds-logo">
@@ -142,7 +145,9 @@
           <p>Минимальная предоплата</p>
          </li>
        </ul>
+       </section>
 
+       </div>
 
        <section class="clients">
          <h2>Клиенты</h2>
@@ -164,6 +169,7 @@
             </li>
          </ul>
         </section>
+
 
         <section class="contacts">
           <h2>Контакты</h2>
@@ -193,32 +199,43 @@
              </a>
 
         </section>
+
     </main>
+
     <footer class="main-footer">
+
+      <div class="container content-wrapper">
       <section class="footer-social">
       <ul class="social-list">
-        <li>
-          <a class="btn social-btn" href="#">
-            <img src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-vk" src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
         </li>
-        <li>
-          <a class="btn social-btn" href="#">
-            <img src="img/socials/facebook-icon.svg" width="12" height="22" alt="Мы в Facebook"></a>
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-fb" src="img/socials/facebook-icon.svg" width="12" height="22" alt="Мы в Facebook"></a>
         </li>
-        <li>
-          <a class="btn social-btn" href="#">
-            <img src="img/socials/instagram-icon.svg" width="15" height="9" alt="Мы в Instagram"></a>
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-inst" src="img/socials/instagram-icon.svg" width="15" height="9" alt="Мы в Instagram"></a>
         </li>
       </ul>
       </section>
+      <section class="footer-publicity">
        <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
        <p>Скидка 10% для друзей из социальных сетей.</p>
+       </section>
+       </div>
+
     </footer>
 
     <section class="footer-contacts">
+      <div class="container">
       <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
       <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       <button class="btn write-to-us-btn" type="submit">Напишите нам</button>
+      </div>
     </section>
+
   </body>
 </html>
