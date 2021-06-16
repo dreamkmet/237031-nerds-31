@@ -214,6 +214,11 @@
   list-style: none;
 }
 
+.page-with-layouts-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .page-btn {
   border: 3px solid var(--basic-extra-silver);
   box-sizing: border-box;
@@ -338,7 +343,7 @@
 
 .social-list-item {
   display: inline-block;
-  margin: 0 10px;
+  margin-right: 10px;
   background-color: var(--basic-silver-grey);
   border: 1px solid var(--basic-white);
   width: 81px;
