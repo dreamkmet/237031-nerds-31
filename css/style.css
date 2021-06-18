@@ -69,6 +69,20 @@
   font-weight: 500;
 }
 
+/* filter mackets */
+
+.filter-price {
+  border: none;
+}
+
+.grid-filter {
+  border: none;
+}
+
+.mackets-filter {
+  border: none;
+}
+
 /* Main navigation */
 
 .main-navigation {
@@ -221,6 +235,12 @@
 }
 
 .layouts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+.mackets-list {
   list-style: none;
 }
 
@@ -392,6 +412,28 @@
 
 .sort-list {
   list-style: none;
+}
+
+.sort-item {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+/* page catalog */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-content: start;
+}
+
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+  margin-bottom: 55px;
+}
+
+.page-catalog .contacts {
+  grid-column: 1 / -1;
 }
 
 .footer-social {
