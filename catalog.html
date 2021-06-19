@@ -46,17 +46,18 @@
      <h1>Магазин готовых шаблонов</h1>
   </header>
 
-  <main class="container">
-    <h2>Фильтр готовых шаблонов</h2>
+  <main class="page-catalog container">
+    <h2 class="page-title">Фильтр готовых шаблонов</h2>
    <form method="get" action="echo.htmlacademy.ru">
      <fieldset class="filter-price">
+
        <legend>СТОИМОСТЬ:</legend>
          <p>
            <input type="range" name="price" id="price">
            <label for="price">от 0 до 15000</label>
           </p>
      </fieldset>
-    <fieldset>
+    <fieldset class="grid-filter">
 
       <legend>СЕТКА:</legend>
       <ul class="grid-list">
@@ -74,10 +75,10 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset>
+    <fieldset class="mackets-filter">
       <legend>ОСОБЕННОСТИ:</legend>
-      <ul class="features-list">
-        <li class="features-item">
+      <ul class="mackets-list">
+        <li class="mackets-item">
           <input type="checkbox" name="slider" id="filter-sliders" checked>
           <label for="filter-sliders">Слайдер</label>
         </li>
@@ -101,13 +102,15 @@
     </fieldset>
     <button class="btn buy-btn" type="submit">Показать</button>
    </form>
-
-  <section>
+   <div class="sort-wrapper">
+  <section class="sort-catalog">
     <h3>Сортировать:</h3>
     <form action="https://echo.htmlacademy.ru" method="post">
 
     </form>
+
   </section>
+      <section class="sort-mackets">
       <ul class="sort-list">
         <li class="sort-item">
           <input type="radio" name="price" id="filter-price" checked>
@@ -122,6 +125,8 @@
           <label for="filter-name">ПО НАЗВАНИЮ</label>
         </li>
       </ul>
+      </section>
+
       <ul class="layouts-list">
         <li class="layouts-item">
           <a href="#">
@@ -180,7 +185,7 @@
         </li>
       </ul>
 
-
+      </div>
 
     <section class="contacts">
       <a class="map" href="blank.html">
@@ -189,11 +194,29 @@
        <img src="img/map-marker.png" width="231" height="190" alt="Мы на карте"></a>
 
   </section>
-
   </main>
 
   <footer class="main-footer">
-    <div class="container">
+    <div class="container content-wrapper">
+      <section class="footer-social">
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a href="#">
+              <img class="social-list-logo-vk" src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
+          </li>
+          <li class="social-list-item">
+            <a href="#">
+              <img class="social-list-logo-fb" src="img/socials/facebook-icon.svg" width="12" height="22"
+                alt="Мы в Facebook"></a>
+          </li>
+          <li class="social-list-item">
+            <a href="#">
+              <img class="social-list-logo-inst" src="img/socials/instagram-icon.svg" width="15" height="9"
+                alt="Мы в Instagram"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-publicity">
      <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
