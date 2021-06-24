@@ -55,11 +55,21 @@
 .site-navigation a {
   text-decoration: none;
 }
+/* User Cart */
 
+.user-cart {
+  width: 140px;
+}
 .user-cart-image {
   text-decoration: none; /* Убирает нижнее подчеркивание текста */
 }
 
+.user-cart .user-cart-text {
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+}
 .page-body img {
   max-width: 100%;
   height: auto;
@@ -120,7 +130,7 @@
 /* Logo */
 
 .main-header-logo {
-  justify-self: left;
+  justify-self: start;
   width: 160px;
   height: 65px;
 }
@@ -132,7 +142,9 @@
   padding: 0 10px;
 }
 
+/* Site Navigation */
 .site-navigation {
+  width: 600px;
   margin: 0;
   padding: 0;
   list-style: none; /*Убирает маркеры списка */
@@ -174,7 +186,7 @@
   line-height: 55px;
 }
 
-/* services */
+/* Services */
 
 .services {
   margin-bottom: 121px;
@@ -192,9 +204,6 @@
   text-align: left;
 }
 
-.services-item p {
-  margin: 0 10px;
-}
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
