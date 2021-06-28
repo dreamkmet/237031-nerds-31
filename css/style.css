@@ -123,6 +123,10 @@
   margin-bottom: 20px;
 }
 
+.mackets-filter li {
+  width: 228px;
+  min-height: 20px;
+}
 /* Main navigation */
 
 .main-navigation {
