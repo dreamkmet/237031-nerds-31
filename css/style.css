@@ -21,10 +21,13 @@
   --basic-light-yellow: #efc849;
   --basic-yellow: #eab534;
   --basic-dark-yellow: #e5a722;
+  --basic-extra-yellow: #efc849;
 }
+
 .page {
   height: 100%;
 }
+
 .page-body {
   min-width: 1160px;
   margin: 0;
@@ -36,19 +39,33 @@
   color: var(--basic-black);
   text-transform: none;
   background-color: var(--basic-white);
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
 
+/* site navigation */
+
 .site-navigation a {
   text-decoration: none;
 }
 
+/* User Cart */
+
+.user-cart {
+  width: 140px;
+}
+
 .user-cart-image {
   text-decoration: none; /* Убирает нижнее подчеркивание текста */
+}
+
+.user-cart .user-cart-text {
+  padding-left: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .page-body img {
@@ -69,27 +86,57 @@
   font-weight: 500;
 }
 
-/* filter mackets */
+/* Filters */
 
-.filter-price {
+.filters {
+  width: 280px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
   border: none;
 }
 
-.grid-filter {
-  border: none;
+.filter fieldset:first-child {
+  margin-bottom: 54px;
 }
 
-.mackets-filter {
-  border: none;
+.filter legend {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
+.filter ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 20px;
+}
+
+.grid-item {
+  margin-bottom: 20px;
+}
+.features-item {
+  margin-bottom: 20px;
+}
+
+.mackets-filter li {
+  width: 228px;
+  min-height: 20px;
+}
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
+  margin-top: 75px;
 }
 
 /*Container */
@@ -100,22 +147,35 @@
   padding: 0 10px;
 }
 
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-catalog .container {
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 /* Logo */
 
 .main-header-logo {
-  justify-self: left;
+  justify-self: start;
+  width: 160px;
+  height: 65px;
 }
 
 .main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr min-content;
+  width: 100%;
+  margin-left: 202px;
   background-color: var(--basic-white);
-  width: 483px;
-  margin: 40px auto;
   padding: 0 10px;
 }
 
+/* Site Navigation */
+
 .site-navigation {
+  width: 600px;
   margin: 0;
   padding: 0;
   list-style: none; /*Убирает маркеры списка */
@@ -157,66 +217,129 @@
   line-height: 55px;
 }
 
-/* services */
+/* Services */
 
 .services {
-  margin-bottom: 121px;
+  margin-bottom: 80px;
 }
+
 .services-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 100px; /*Расстояние между колонками */
+  column-gap: 100px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .services-item {
+  width: 300px;
   text-align: left;
 }
 
-.services-item p {
-  margin: 0 10px;
-}
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
 }
 
-/* index columns */
-
-.index-columns {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+.services-item p {
+  margin-bottom: 32px;
 }
 
-.features-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 40px;
-  margin: 0;
-  padding: 0;
+.services-btn {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  width: 160px;
+  color: var(--basic-white);
+}
+
+.btn-web {
+  background-color: var(--basic-extra-red);
+}
+
+.btn-apps {
+  background-color: var(--basic-light-green);
+}
+
+.btn-present {
+  background-color: var(--basic-extra-yellow);
+}
+
+/* Index Columns */
+
+.index-columns {
+  /*display: grid;
+  grid-template-columns: 2fr 1fr;*/
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 73px;
 }
 
 .about-us {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 45px;
   line-height: 45px;
 }
+
+/* Orders List */
 
 .orders-list {
   list-style: none;
 }
 
-.features-list {
-  list-style: none;
+.orders-item {
+  margin: 0;
+  margin-bottom: 23px;
 }
+
+.orders-item p {
+  margin: 0;
+}
+
+/*Orders Statistic */
+
+.orders-statistic h2 {
+  text-align: center;
+  width: 358px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 31px;
+}
+
+.nerds-logo {
+  width: 360px;
+  height: 208px;
+  margin-bottom: 37px;
+}
+
 .excellence {
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.features-list p {
+  margin: 0;
 }
 
 /* Clients */
+
 .clients-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -226,25 +349,37 @@
   padding: 0;
 }
 
-.grid-list {
-  list-style: none;
+.features-item {
+  width: 78px;
+  min-height: 64px;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
-
-.features-list {
-  list-style: none;
-}
+/*Layouts List */
 
 .layouts-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  /*display: grid;
+  grid-template-columns: 1fr 1fr;*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
   list-style: none;
 }
 
-.mackets-list {
-  list-style: none;
+.layouts-item {
+  width: 358px;
+  min-height: 578px;
+  margin-right: 42px;
+  margin-bottom: 30px;
 }
 
-/*page with layouts list */
+.layouts-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+/*Page with layouts list */
 
 .page-with-layouts-list {
   list-style: none;
@@ -308,10 +443,13 @@
 }
 
 /* Contacts */
+
 .contacts-phone {
   color: inherit; /*Цвет наследуется от родителя */
   text-decoration: none;
 }
+
+/*Contacts-form */
 
 .contacts h3 {
   font-size: 18px;
@@ -319,7 +457,11 @@
   font-weight: bold;
 }
 
-/*Contacts-form */
+.contacts h2 {
+  margin: 0;
+  margin-bottom: 37px;
+}
+
 .contacts-form-item {
   font-size: 16px;
   line-height: 18px;
@@ -335,6 +477,16 @@
 
 .contacts-form-input:focus {
   border-color: var(--basic-black);
+}
+
+.contacts-form p {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.send-btn {
+  width: 260px;
+  margin-top: 27px;
 }
 
 /* Popup */
@@ -359,6 +511,7 @@
   height: 50px;
   background-color: var(--basic-extra-red);
 }
+
 /* Main footer */
 
 .main-footer {
@@ -419,7 +572,7 @@
   margin-right: 25px;
 }
 
-/* page catalog */
+/* Page Catalog */
 
 .page-catalog {
   display: grid;

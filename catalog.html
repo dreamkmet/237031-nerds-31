@@ -36,7 +36,10 @@
 
             <div class="user-cart">
               <a class="user-cart-image" href="blank.html">
-                <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">Корзина
+                <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+                <span class="user-cart-text">
+                  Корзина
+                </span>
               </a>
             </div>
           </div>
@@ -47,8 +50,10 @@
   </header>
 
   <main class="page-catalog container">
+
+    <section class="filters">
     <h2 class="page-title">Фильтр готовых шаблонов</h2>
-   <form method="get" action="echo.htmlacademy.ru">
+   <form class="filter" method="get" action="echo.htmlacademy.ru">
      <fieldset class="filter-price">
 
        <legend>СТОИМОСТЬ:</legend>
@@ -60,7 +65,7 @@
     <fieldset class="grid-filter">
 
       <legend>СЕТКА:</legend>
-      <ul class="grid-list">
+      <ul>
         <li class="grid-item">
           <input type="radio" name="adaptive" id="filter-adaptive" checked>
           <label for="filter-adaptive">Адаптивная</label>
@@ -77,8 +82,8 @@
     </fieldset>
     <fieldset class="mackets-filter">
       <legend>ОСОБЕННОСТИ:</legend>
-      <ul class="mackets-list">
-        <li class="mackets-item">
+      <ul>
+        <li class="features-item">
           <input type="checkbox" name="slider" id="filter-sliders" checked>
           <label for="filter-sliders">Слайдер</label>
         </li>
@@ -102,6 +107,8 @@
     </fieldset>
     <button class="btn buy-btn" type="submit">Показать</button>
    </form>
+   </section>
+
    <div class="sort-wrapper">
   <section class="sort-catalog">
     <h3>Сортировать:</h3>
