@@ -63,15 +63,25 @@
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 620px;
+  justify-content: center;
+  width: 800px;
   margin: 0;
   padding: 0;
   list-style: none;
   min-height: 70px;
 }
 
+.user-navigation {
+  max-width: 180px;
+}
+
+.user-navigation .login-link {
+  padding-left: 20px;
+  position: relative;
+}
+
 .site-navigation a,
-.user-cart a {
+.user-navigation a {
   color: var(--basic-black);
   display: block;
   padding: 25px 20px;
@@ -81,9 +91,13 @@
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-cart a:hover,
-.user-cart a:focus {
+.user-navigation a:hover,
+.user-navigation a:focus {
   background-color: var(--basic-extra-red);
+}
+
+.site-navigation-current {
+  position: relative;
 }
 
 .site-navigation-current a:not([href]) {
@@ -99,13 +113,6 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.main-header h1 {
-  text-align: center;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
 }
 
 /* Filters */
@@ -155,7 +162,7 @@
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   font-size: 16px;
   line-height: 30px;
@@ -172,28 +179,25 @@
 }
 
 .main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 78px;
+  background-color: var(--basic-white);
+}
+
+.main-navigation-wrapper .container {
   display: flex;
   justify-content: space-between;
 }
 
-.page-catalog .container {
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-/* Logo */
+/* Main Header Logo */
 
 .main-header-logo {
+  display: flex;
   justify-self: start;
+  margin: 0;
+  padding: 0;
   width: 160px;
   height: 65px;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-left: 202px;
-  background-color: var(--basic-white);
-  padding: 0 10px;
 }
 
 .slides-list {
@@ -428,6 +432,10 @@
 
 /* Contacts */
 
+.map {
+  width: 1440px;
+  height: 416px;
+}
 .contacts-phone {
   color: inherit; /*Цвет наследуется от родителя */
   text-decoration: none;
