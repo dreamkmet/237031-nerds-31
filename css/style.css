@@ -24,6 +24,15 @@
   --basic-extra-yellow: #efc849;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
@@ -112,7 +121,6 @@
 .main-header {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 /* Filters */
