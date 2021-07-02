@@ -12,42 +12,35 @@
 
   <body class="page-body">
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
-
-        <div class="main-header-bar">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс"></a>
           <div class="main-navigation-wrapper">
-            <ul class="site-navigation">
-              <li>
-                <a href="blank.html">СТУДИЯ</a>
-              </li>
-              <li>
-                <a href="blank.html">КЛИЕНТЫ</a>
-              </li>
-              <li>
-                <a href="catalog.html">МАГАЗИН</a>
-              </li>
-              <li>
-                <a href="blank.html">КОНТАКТЫ</a>
-              </li>
-            </ul>
+            <div class="container">
+              <ul class="site-navigation">
+                <li>
+                  <a href="blank.html">Студия</a>
+                </li>
+                <li>
+                  <a href="blank.html">Клиенты</a>
+                </li>
+                <li>
+                  <a href="catalog.html">Магазин</a>
+                </li>
+                <li>
+                  <a href="blank.html">Контакты</a>
+                </li>
+              </ul>
 
-            <div class="user-cart">
-              <a class="user-cart-image" href="blank.html">
-                <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-                <span class="user-cart-text">
-                  Корзина
-                </span>
-              </a>
+              <div class="user-navigation">
+                <a class="login-link" href="blank.html">Корзина</a>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
-
-     <h1>Магазин готовых шаблонов</h1>
-  </header>
+        </nav>
+      <h1>Магазин готовых шаблонов</h1>
+    </header>
 
   <main class="page-catalog container">
 
@@ -109,15 +102,10 @@
    </form>
    </section>
 
-   <div class="sort-wrapper">
-  <section class="sort-catalog">
-    <h3>Сортировать:</h3>
-    <form action="https://echo.htmlacademy.ru" method="post">
-
-    </form>
-
-  </section>
-      <section class="sort-mackets">
+     <section class="catalog">
+      <h2 class="visually-hidden">Каталог шаблонов</h2>
+      <div class="catalog-filter">
+      <b>Сортировать:</b>
       <ul class="sort-list">
         <li class="sort-item">
           <input type="radio" name="price" id="filter-price" checked>
@@ -132,41 +120,34 @@
           <label for="filter-name">ПО НАЗВАНИЮ</label>
         </li>
       </ul>
-      </section>
-
-      <ul class="layouts-list">
-        <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/sedona-template.jpg" width="358" height="578" alt="Макет Sedona"></a>
+       </div>
+        <section class="layouts-filter">
+        <ul class="layouts-list">
+          <li class="layouts-item">
+            <img src="img/templates/sedona-template.jpg" width="358" height="578" alt="Макет Sedona">
         </li>
         <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/pink-template.jpg" width="358" height="578" alt="Макет PINK"></a>
+            <img src="img/templates/pink-template.jpg" width="358" height="578" alt="Макет PINK">
         </li>
         <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/barbershop-template.jpg" width="358" height="578" alt="Макет Barbershop BORODINSKI"></a>
+            <img src="img/templates/barbershop-template.jpg" width="358" height="578" alt="Макет Barbershop BORODINSKI">
         </li>
         <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/mishka-template.jpg" width="359" height="578" alt="Макет MISHKA"></a>
+            <img src="img/templates/mishka-template.jpg" width="359" height="578" alt="Макет MISHKA">
         </li>
         <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/aplus-template.jpg" width="359" height="578" alt="Макет A+"></a>
+            <img src="img/templates/aplus-template.jpg" width="359" height="578" alt="Макет A+">
         </li>
         <li class="layouts-item">
-          <a href="#">
-            <img src="img/templates/kvast-template.jpg" width="359" height="578" alt="Макет КВАСТ"></a>
+            <img src="img/templates/kvast-template.jpg" width="359" height="578" alt="Макет КВАСТ">
         </li>
       </ul>
-
+      </section>
+      </div>
       <div class="popup">
         <h2>КВАСТ</h2>
         <p>Промо-сайт производителя крафтового кваса</p>
-
         <button class="btn popup-btn" type="submit">9 900 ₽</button>
-
       </div>
 
       <ul class="page-with-layouts-list">
@@ -192,7 +173,7 @@
         </li>
       </ul>
 
-      </div>
+
 
     <section class="contacts">
       <a class="map" href="blank.html">
@@ -203,31 +184,34 @@
   </section>
   </main>
 
-  <footer class="main-footer">
-    <div class="container content-wrapper">
-      <section class="footer-social">
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a href="#">
-              <img class="social-list-logo-vk" src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
-          </li>
-          <li class="social-list-item">
-            <a href="#">
-              <img class="social-list-logo-fb" src="img/socials/facebook-icon.svg" width="12" height="22"
-                alt="Мы в Facebook"></a>
-          </li>
-          <li class="social-list-item">
-            <a href="#">
-              <img class="social-list-logo-inst" src="img/socials/instagram-icon.svg" width="15" height="9"
-                alt="Мы в Instagram"></a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-publicity">
-     <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
+<footer class="main-footer">
+
+  <div class="container content-wrapper">
+    <section class="footer-social">
+      <ul class="social-list">
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-vk" src="img/socials/vk-icon.svg" width="26" height="15" alt="Мы в VK"></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-fb" src="img/socials/facebook-icon.svg" width="12" height="22"
+              alt="Мы в Facebook"></a>
+        </li>
+        <li class="social-list-item">
+          <a href="#">
+            <img class="social-list-logo-inst" src="img/socials/instagram-icon.svg" width="15" height="9"
+              alt="Мы в Instagram"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-publicity">
+      <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </footer>
+    </section>
+  </div>
+
+</footer>
 
 <section class="footer-contacts">
   <div class="container">

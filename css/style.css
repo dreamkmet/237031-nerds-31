@@ -24,12 +24,21 @@
   --basic-extra-yellow: #efc849;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 .page {
   height: 100%;
 }
 
 .page-body {
-  min-width: 1160px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -45,27 +54,63 @@
   align-content: start;
 }
 
-/* site navigation */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
-.site-navigation a {
+/* Site Navigation */
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+  padding: 0;
+  list-style: none;
+  min-height: 70px;
+  margin: 0 auto;
+}
+
+.user-navigation {
+  max-width: 180px;
+}
+
+.user-navigation .login-link {
+  padding-left: 20px;
+  position: relative;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+  display: block;
+  padding: 25px 20px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
-/* User Cart */
-
-.user-cart {
-  width: 140px;
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-extra-red);
 }
 
-.user-cart-image {
-  text-decoration: none; /* Убирает нижнее подчеркивание текста */
+.site-navigation-current {
+  position: relative;
 }
 
-.user-cart .user-cart-text {
-  padding-left: 50px;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-extra-red);
 }
 
 .page-body img {
@@ -74,22 +119,14 @@
 }
 
 .main-header {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-}
-
-.main-header h1 {
-  text-align: center;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
 }
 
 /* Filters */
 
 .filters {
-  width: 280px;
+  width: 260px;
 }
 
 .filter fieldset {
@@ -119,6 +156,7 @@
 .grid-item {
   margin-bottom: 20px;
 }
+
 .features-item {
   margin-bottom: 20px;
 }
@@ -127,85 +165,42 @@
   width: 228px;
   min-height: 20px;
 }
+
 /* Main navigation */
 
 .main-navigation {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  margin-top: 75px;
 }
 
 /*Container */
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
 .main-navigation-wrapper {
+  width: 100%;
+  background-color: var(--basic-white);
+}
+
+.main-navigation-wrapper .container {
   display: flex;
   justify-content: space-between;
 }
 
-.page-catalog .container {
-  align-items: flex-start;
-  flex-direction: row;
-}
-
-/* Logo */
+/* Main Header Logo */
 
 .main-header-logo {
-  justify-self: start;
-  width: 160px;
-  height: 65px;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-left: 202px;
-  background-color: var(--basic-white);
-  padding: 0 10px;
-}
-
-/* Site Navigation */
-
-.site-navigation {
-  width: 600px;
   margin: 0;
   padding: 0;
-  list-style: none; /*Убирает маркеры списка */
-}
-
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-extra-red);
-}
-
-/*User Navigation */
-
-.site-navigation a,
-.user-navigation a {
-  color: var(--basic-black);
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-cart a:hover,
-.user-cart a:focus {
-  background-color: var(--basic-extra-red);
-}
-
-/* User Cart */
-
-.user-cart-image {
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 500;
-  color: var(--basic-black);
+  width: 160px;
+  height: 65px;
 }
 
 .slides-list {
@@ -357,13 +352,14 @@
 }
 /*Layouts List */
 
+.layouts-filter {
+  width: 800px;
+}
+
 .layouts-list {
-  /*display: grid;
-  grid-template-columns: 1fr 1fr;*/
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
   margin-bottom: 55px;
   list-style: none;
 }
@@ -371,12 +367,7 @@
 .layouts-item {
   width: 358px;
   min-height: 578px;
-  margin-right: 42px;
   margin-bottom: 30px;
-}
-
-.layouts-item:nth-child(2n) {
-  margin-right: 0;
 }
 
 /*Page with layouts list */
@@ -444,6 +435,10 @@
 
 /* Contacts */
 
+.map {
+  width: 1440px;
+  height: 416px;
+}
 .contacts-phone {
   color: inherit; /*Цвет наследуется от родителя */
   text-decoration: none;
