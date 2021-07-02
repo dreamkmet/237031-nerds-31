@@ -74,10 +74,10 @@ html {
   flex-wrap: wrap;
   justify-content: center;
   width: 800px;
-  margin: 0;
   padding: 0;
   list-style: none;
   min-height: 70px;
+  margin: 0 auto;
 }
 
 .user-navigation {
@@ -171,11 +171,9 @@ html {
 .main-navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
-  margin-top: 75px;
 }
 
 /*Container */
@@ -188,7 +186,6 @@ html {
 
 .main-navigation-wrapper {
   width: 100%;
-  margin-bottom: 78px;
   background-color: var(--basic-white);
 }
 
@@ -200,8 +197,6 @@ html {
 /* Main Header Logo */
 
 .main-header-logo {
-  display: flex;
-  justify-self: start;
   margin: 0;
   padding: 0;
   width: 160px;
