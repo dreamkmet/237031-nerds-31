@@ -284,13 +284,16 @@ html {
 
 /* Index Columns */
 
+.about-company {
+  margin-top: 72px;
+}
 .index-columns {
   /*display: grid;
   grid-template-columns: 2fr 1fr;*/
   display: flex;
   justify-content: space-between;
 
-  padding: 53px 0;
+  padding: 0;
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
 }
@@ -324,6 +327,10 @@ html {
 }
 
 /*Orders Statistic */
+
+.orders-statistic {
+  padding: 40px 0;
+}
 
 .orders-statistic h2 {
   text-align: center;
