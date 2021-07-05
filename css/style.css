@@ -80,8 +80,22 @@ html {
   margin: 0 auto;
 }
 
+/* Login linl */
+
 .user-navigation {
   max-width: 180px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .user-navigation .login-link {
@@ -93,7 +107,7 @@ html {
 .user-navigation a {
   color: var(--basic-black);
   display: block;
-  padding: 25px 20px;
+  padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -102,7 +116,7 @@ html {
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: var(--basic-extra-red);
+  color: var(--basic-extra-red);
 }
 
 .site-navigation-current {
@@ -121,6 +135,7 @@ html {
 .main-header {
   width: 1200px;
   margin: 0 auto;
+  background-color: var(--basic-grey);
 }
 
 /* Filters */
@@ -186,7 +201,6 @@ html {
 
 .main-navigation-wrapper {
   width: 100%;
-  background-color: var(--basic-white);
 }
 
 .main-navigation-wrapper .container {
@@ -205,6 +219,8 @@ html {
 
 .slides-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slides-list h2 {
@@ -215,7 +231,7 @@ html {
 /* Services */
 
 .services {
-  margin-bottom: 80px;
+  padding: 80px 0;
 }
 
 .services-list {
@@ -235,6 +251,7 @@ html {
 .services-item h3 {
   font-size: 24px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .services-item p {
@@ -247,7 +264,9 @@ html {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
   width: 160px;
+  height: 50px;
   color: var(--basic-white);
 }
 
@@ -270,9 +289,15 @@ html {
   grid-template-columns: 2fr 1fr;*/
   display: flex;
   justify-content: space-between;
-  margin-bottom: 73px;
+
+  padding: 53px 0;
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
 }
 
+.index-columns h3 {
+  text-transform: uppercase;
+}
 .about-us {
   margin: 0;
   margin-bottom: 32px;
@@ -284,11 +309,14 @@ html {
 
 .orders-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .orders-item {
   margin: 0;
   margin-bottom: 23px;
+  margin-left: 32px;
 }
 
 .orders-item p {
@@ -305,6 +333,7 @@ html {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 31px;
+  text-transform: uppercase;
 }
 
 .nerds-logo {
@@ -318,6 +347,12 @@ html {
   line-height: 64px;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.excellence sup {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
 }
 
 .features-list {
@@ -334,6 +369,12 @@ html {
 }
 
 /* Clients */
+
+.clients {
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  padding: 44px 0;
+}
 
 .clients-list {
   display: grid;
@@ -362,6 +403,8 @@ html {
   align-content: start;
   margin-bottom: 55px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .layouts-item {
@@ -434,6 +477,12 @@ html {
 }
 
 /* Contacts */
+
+.contacts {
+  background-image: url("../img/line.png");
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
 
 .map {
   width: 1440px;
@@ -523,6 +572,8 @@ html {
 
 .social-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-list-item {
@@ -560,6 +611,8 @@ html {
 
 .sort-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .sort-item {
