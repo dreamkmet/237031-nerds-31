@@ -3,6 +3,8 @@
   --basic-dark: #444444;
   --basic-extra-dark: #283136;
   --basic-dark-grey: #4d4d4d;
+  --special-grey: #ababab;
+  --special-extra-grey: #cfcfcf;
   --basic-silver-grey: #e1e1e1;
   --basic-extra-grey: #a6a6a6;
   --basic-light-grey: #d5d5d5;
@@ -41,6 +43,7 @@ html {
   min-width: 1200px;
   margin: 0;
   padding: 0;
+
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -80,7 +83,7 @@ html {
   margin: 0 auto;
 }
 
-/* Login linl */
+/* Login link */
 
 .user-navigation {
   max-width: 180px;
@@ -133,15 +136,36 @@ html {
 }
 
 .main-header {
-  width: 1200px;
-  margin: 0 auto;
   background-color: var(--basic-grey);
 }
 
+.page-title h1 {
+  margin: 0;
+  padding-top: 78px;
+  padding-bottom: 108px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
 /* Filters */
 
-.filters {
+.filter-price {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.range-filter {
   width: 260px;
+  margin-top: 49px;
+}
+
+.filter-price legend {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .filter fieldset {
@@ -159,6 +183,74 @@ html {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 20px;
+}
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: var(--basic-grey);
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--basic-silver);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-light-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--special-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--special-extra-grey);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 80px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: var(--basic-extra-dark);
+  border: none;
+  border-radius: 5px;
+  background: var(--basic-grey);
+  font-family: inherit;
+  font-size: inherit;
 }
 
 .filter ul {
@@ -211,8 +303,6 @@ html {
 /* Main Header Logo */
 
 .main-header-logo {
-  margin: 0;
-  padding: 0;
   width: 160px;
   height: 65px;
 }
@@ -292,10 +382,9 @@ html {
   grid-template-columns: 2fr 1fr;*/
   display: flex;
   justify-content: space-between;
-
-  padding: 0;
   background-image: url("../img/line.png");
   background-repeat: no-repeat;
+  margin-bottom: 80px;
 }
 
 .index-columns h3 {
@@ -378,12 +467,12 @@ html {
 /* Clients */
 
 .clients {
-  background-image: url("../img/line.png");
   background-repeat: no-repeat;
-  padding: 44px 0;
+  margin-bottom: 80px;
 }
 
 .clients-list {
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 100px;
@@ -486,15 +575,10 @@ html {
 /* Contacts */
 
 .contacts {
-  background-image: url("../img/line.png");
+  background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  padding: 80px 0;
 }
 
-.map {
-  width: 1440px;
-  height: 416px;
-}
 .contacts-phone {
   color: inherit; /*Цвет наследуется от родителя */
   text-decoration: none;
@@ -631,11 +715,12 @@ html {
 
 .page-catalog {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 1fr 1fr;
   align-content: start;
+  padding: 0;
 }
 
-.page-catalog .page-title {
+.page-catalog .container {
   grid-column: 1 / -1;
   margin-bottom: 55px;
 }
