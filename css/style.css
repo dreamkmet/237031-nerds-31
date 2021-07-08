@@ -411,14 +411,22 @@ html {
   margin: 0;
 }
 
-.orders-item {
-  margin: 0;
-  margin-bottom: 23px;
-  margin-left: 32px;
+.orders-list li {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 36px;
 }
 
-.orders-item p {
-  margin: 0;
+.orders-list li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: var(--basic-red);
 }
 
 /*Orders Statistic */
