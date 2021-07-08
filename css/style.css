@@ -75,12 +75,12 @@ html {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 800px;
+  width: 620px;
   padding: 0;
   list-style: none;
   min-height: 70px;
   margin: 0 auto;
+  padding: 0;
 }
 
 /* Login link */
@@ -110,7 +110,7 @@ html {
 .user-navigation a {
   color: var(--basic-black);
   display: block;
-  padding: 20px;
+  padding: 25px 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -574,11 +574,6 @@ html {
 
 /* Contacts */
 
-.contacts {
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-}
-
 .contacts-phone {
   color: inherit; /*Цвет наследуется от родителя */
   text-decoration: none;
@@ -651,7 +646,7 @@ html {
 
 .main-footer {
   background-color: var(--basic-white);
-  margin-top: 68px;
+  margin-bottom: 68px;
 }
 
 .content-wrapper {
@@ -736,7 +731,7 @@ html {
 .footer-socal-quote {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main-footer p {
