@@ -12,70 +12,103 @@
 
   <body class="page-body">
 
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <div class="main-navigation-wrapper">
-          <div class="container">
-            <ul class="site-navigation">
-              <li>
-                <a href="blank.html">Студия</a>
-              </li>
-              <li>
-                <a href="blank.html">Клиенты</a>
-              </li>
-              <li>
-                <a href="catalog.html">Магазин</a>
-              </li>
-              <li>
-                <a href="blank.html">Контакты</a>
-              </li>
-            </ul>
-
-            <div class="user-navigation">
-              <a class="login-link" href="blank.html">Корзина</a>
-            </div>
+  <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="main-header-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+      </a>
+      <div class="main-navigation-wrapper">
+        <div class="container">
+          <ul class="site-navigation">
+            <li>
+              <a href="blank.html">Студия</a>
+            </li>
+            <li>
+              <a href="blank.html">Клиенты</a>
+            </li>
+            <li>
+              <a href="catalog.html">Магазин</a>
+            </li>
+            <li>
+              <a href="blank.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="user-navigation">
+            <a class="login-link" href="blank.html">Корзина</a>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <h1 class="visually-hidden">Нёрдс</h1>
-      <section class="slides">
-        <ul class="slides-list">
-          <li class="slide-1">
-            <h2>Долго, дорого, скрупулезно.</h2>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <button class="btn detail-btn" type="button">Узнать больше</button>
-            <a>
-              <img src="img/slide-1.png" width="760" height="431" alt="Дизайн для вашего сайта или мобильного приложения"></a>
-          </li>
-          <li class="slide-2">
-            <h2>Любим математику как никто другой</h2>
-            <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-            <button class="btn detail-btn" type="button">Узнать больше</button>
-            <a>
-              <img src="img/slide-2.png" width="760" height="431"
-                alt="Только математические формулы для расчета идеальных пропорций"></a>
-          </li>
-          <li class="slide-3">
-            <h2>Только ночь, только хардкор</h2>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <button class="btn detail-btn" type="button">Узнать больше</button>
-            <a>
-              <img src="img/slide-3.png" width="760" height="431" alt="Работаем ночью"></a>
-          </li>
-        </ul>
-      </section>
-    </header>
+    <h1 class="visually-hidden">Нёрдс</h1>
+    <section class="container">
+      <ul class="slides-list">
+        <li class="slide one">
+          <h2>Долго, дорого, скрупулезно.</h2>
+          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+          <button class="btn detail-btn" type="button">Узнать больше</button>
+          <a>
+            <img src="img/slide-1.png" width="760" height="431"
+              alt="Дизайн для вашего сайта или мобильного приложения"></a>
+        </li>
+        <li class="slide two">
+          <h2>Любим математику как никто другой</h2>
+          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+          <button class="btn detail-btn" type="button">Узнать больше</button>
+          <a>
+            <img src="img/slide-2.png" width="760" height="431"
+              alt="Только математические формулы для расчета идеальных пропорций"></a>
+        </li>
+        <li class="slide three">
+          <h2>Только ночь, только хардкор</h2>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <button class="btn detail-btn" type="button">Узнать больше</button>
+          <a>
+            <img src="img/slide-3.png" width="760" height="431" alt="Работаем ночью"></a>
+        </li>
+      </ul>
+    </section>
+  </header>
 
     <main>
 
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <section class="contacts">
+        <div class="container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="modal">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="contacts-form-item">
+                <label for="appointment-name">Ваше имя:</label>
+                <input class="contacts-form-input" id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+              </p>
+              <p class="contacts-form-item">
+                <label for="appointment-email">Ваш email:</label>
+                <input class="contacts-form-input" id="appointment-email" type="email" name="email"
+                  placeholder="email@example.com">
+              </p>
+              <p class="contacts-form-item">
+                <label for="appointment-letter">Текст письма:</label>
+                <input class="contacts-form-input" id="appointment-letter" type="text" name="letter"
+                  placeholder="В свободной форме">
+              </p>
+              <button class="btn send-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+      </section>
+      </div>
+      <section class="contacts-map">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <img src="img/map.jpg" alt="наб. Реки Карповки, 5 лит П, Санкт-Петербург" width="1440" height="416">
+        <a class="map-marker" href="blank.html">
+          <img src="img/map-marker.png" width="231" height="190" alt="Мы на карте">
+        </a>
+      </section>
+
+      <div class="container content-wrapper">
         <section class="footer-social">
           <ul class="social-list">
             <li class="social-list-item">
@@ -93,11 +126,16 @@
                   alt="Мы в Instagram"></a>
             </li>
           </ul>
-        </section>
-        <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
+
+
+          <section class="footer-publicity">
+            <p class="footer-socal-quote">Давайте дружить, это выгодно!</p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </section>
       </div>
+
     </footer>
+
 
     <section class="footer-contacts">
       <div class="container">
