@@ -446,12 +446,6 @@ html {
   text-transform: uppercase;
 }
 
-.nerds-logo {
-  width: 360px;
-  height: 208px;
-  margin-bottom: 37px;
-}
-
 .excellence {
   font-size: 45px;
   line-height: 64px;
@@ -474,8 +468,9 @@ html {
   margin-bottom: 31px;
 }
 
-.features-list p {
+.features-item dd {
   margin: 0;
+  font-size: inherit;
 }
 
 /* Clients */
@@ -576,8 +571,11 @@ html {
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
+  text-decoration: none;
   background-color: var(--basic-extra-red);
-  border: none;
+  border: 1px solid var(--basic-exta-red);
+  border-radius: 3px;
+  padding: 15px 40px;
 }
 
 .btn:hover,
